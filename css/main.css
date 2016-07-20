@@ -1,0 +1,196 @@
+/* The side navigation menu */
+.sidenav
+{
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 27px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus
+{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.sidenav .active
+{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+/* Style open button */
+.openbtn
+{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding-left: 2vh;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main
+{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color: white;
+    transition: margin-left .5s;
+    top:0;
+    padding: 20px;
+    display: flex;
+    align-items : center;
+    box-sizing: content-box;
+}
+
+body
+{
+    background: url(../img/book4.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 1vh;
+    box-sizing: content-box;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px)
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Disable text selection option */
+.noselect
+{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}
+
+/* Introduction */
+.introduction
+{
+    margin-left: 6%;
+    vertical-align: middle;
+    box-sizing: content-box;
+}
+
+/* Logo format */
+#logo
+{
+    float: left;
+    width: 7vw;
+    height: auto;
+    padding-top: 2%
+}
+
+/* Header style */
+.head
+{
+    float: left;
+    padding-top: 8%;
+    padding-left: 1%;
+}
+
+/* Without Wax Header Font Styling*/
+.header
+{
+	font-family: 'Indie Flower', cursive;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px black;
+	color: white;
+	font-size: 5vw;
+}
+
+/* For quote */
+.quote
+{
+    max-width: 30%;
+    margin-left: 5%;
+    vertical-align: middle;
+    box-sizing: content-box;
+}
+
+blockquote
+{
+    padding: 0;
+    margin: 0;
+    border-left: 0;
+    font-family: Georgia, serif;
+    font-size: 1vw;
+    color: #35b7ef;
+    font-weight: bold;
+    position: relative;
+    overflow: visible;
+    margin: 0.5em;
+    padding: 0.5vw 15vw 0.5vw 10vw;
+}
+
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+blockquote:before
+{
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 7vw;
+    line-height: 0.5;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+
+blockquote:after
+{
+    font-family: Georgia, serif;
+    position: absolute;
+   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    float:right;
+    font-size: 7vw;
+    line-height: 0.5;
+    right: 0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+
+blockquote footer
+{
+    padding: 0 2em 0 0;
+    text-align:right;
+    color: #777;
+    font-size: 18pt;
+}
