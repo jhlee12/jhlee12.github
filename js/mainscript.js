@@ -21,9 +21,9 @@ function closeNav()
 
 $(document).ready(function() {
 	/* Fade in for header */
-	$(".header").fadeIn(3000);
-	$("#logo").fadeIn(3500);
-	$(".quote").delay(500).fadeIn(3000);
+	$(".header").fadeIn(2000);
+	$("#logo").fadeIn(2500);
+	$(".quote").delay(500).fadeIn(2000);
 
 	$(window).resize(function() {
 		$(".nav").css("height", $(".openbtn").outerHeight(true))
