@@ -1,0 +1,159 @@
+/* The side navigation menu */
+.sidenav
+{
+    z-index: 40;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 27px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus
+{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.sidenav .active
+{
+    color: #f1f1f1;
+    text-decoration: : none;
+}
+
+.sidenav a:focus
+{
+    text-decoration: none;
+    outline: 0;
+    outline-offset: 0;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+/* Style open button */
+span.openbtn
+{
+    z-index: 1;
+    font-size: 5vw;
+    float: left;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-align: center;
+    color: black;
+    padding-left: 2.5vw;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+div.nav
+{
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+    z-index: -30;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main
+{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color: white;
+    transition: margin-left .5s;
+    top:0;
+    padding: 20px;
+    display: flex;
+    align-items : center;
+    box-sizing: content-box;
+}
+
+span.page_title
+{
+    padding-left: 2vw;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.7vw;
+    color: black;
+    text-align: center;
+    float: left;
+    vertical-align: middle;
+    display: none;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px)
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Disable text selection option */
+.noselect
+{
+    user-drag: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+    -webkit-user-drag: none; 
+    cursor: default;
+}
+
+@media (min-width: 1024px)
+{
+    span.openbtn
+    {
+        font-size: 30pt;
+        padding-left: 2.5vw;
+    }
+    span.page_title {font-size: 24pt;}
+}
+
+@media (min-width: 1280px)
+{
+    span.openbtn {padding-left: 2vw;}
+    span.page_title {padding-left: 1.5vw;}
+}
+
+@media (min-width: 1440px)
+{
+    span.openbtn {padding-left: 1.7vw;}
+    span.page_title {padding-left: 1.2vw;}
+    div.nav{padding-top: 15px;}
+}
+
+@media (min-width: 1850px)
+{
+    span.openbtn {padding-left: 1.5vw;}
+    span.page_title {padding-left: 1vw;}
+}
