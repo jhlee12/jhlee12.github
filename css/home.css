@@ -1,7 +1,7 @@
 body
 {
-    background: url(../img/book.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
+	background: url(../img/rsz_book.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;

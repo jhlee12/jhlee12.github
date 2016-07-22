@@ -18,11 +18,6 @@ function closeNav()
     document.getElementById("nav").style.display = "flex";
 }
 
-function loadUrl()
-{
-	$(".about").fadeIn(4000);
-}
-
 
 $(document).ready(function() {
 	/* Fade in for header */
@@ -31,8 +26,7 @@ $(document).ready(function() {
 	$(".quote").delay(500).fadeIn(3000);
 
 	$(window).resize(function() {
-		$(".nav").css("height", $(".openbtn").outerHeight())
-		$(".nav").css("max-height", $(".openbtn").outerHeight())
+		$(".nav").css("height", $(".openbtn").outerHeight(true))
+		$(".nav").css("max-height", $(".openbtn").outerHeight(true))
 	});
-	$(".about").fadeIn(4000);
 });
