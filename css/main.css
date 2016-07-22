@@ -1,6 +1,7 @@
 /* The side navigation menu */
 .sidenav
 {
+    z-index: 40;
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -35,6 +36,14 @@
 .sidenav .active
 {
     color: #f1f1f1;
+    text-decoration: : none;
+}
+
+.sidenav a:focus
+{
+    text-decoration: none;
+    outline: 0;
+    outline-offset: 0;
 }
 
 /* Position and style the close button (top right corner) */
@@ -48,13 +57,25 @@
 }
 
 /* Style open button */
-.openbtn
+span.openbtn
 {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 40px;
+    z-index: 1;
+    font-size: 5vw;
+    float: left;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     text-align: center;
-    color: white;
-    padding-left: 2vh;
+    color: black;
+    padding-left: 2.5vw;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+div.nav
+{
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+    z-index: -30;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -73,15 +94,16 @@
     box-sizing: content-box;
 }
 
-body
+span.page_title
 {
-    background: url(../img/book4.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding-top: 1vh;
-    box-sizing: content-box;
+    padding-left: 2vw;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.7vw;
+    color: black;
+    text-align: center;
+    float: left;
+    vertical-align: middle;
 }
 
 
@@ -101,96 +123,34 @@ body
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+    cursor: default;
 }
 
-/* Introduction */
-.introduction
+@media (min-width: 1024px)
 {
-    margin-left: 6%;
-    vertical-align: middle;
-    box-sizing: content-box;
+    span.openbtn
+    {
+        font-size: 30pt;
+        padding-left: 2.5vw;
+    }
+    span.page_title {font-size: 24pt;}
 }
 
-/* Logo format */
-#logo
+@media (min-width: 1280px)
 {
-    float: left;
-    width: 7vw;
-    height: auto;
-    padding-top: 2%
+    span.openbtn {padding-left: 2vw;}
+    span.page_title {padding-left: 1.5vw;}
 }
 
-/* Header style */
-.head
+@media (min-width: 1440px)
 {
-    float: left;
-    padding-top: 8%;
-    padding-left: 1%;
+    span.openbtn {padding-left: 1.7vw;}
+    span.page_title {padding-left: 1.2vw;}
+    div.nav{padding-top: 15px;}
 }
 
-/* Without Wax Header Font Styling*/
-.header
+@media (min-width: 1850px)
 {
-	font-family: 'Indie Flower', cursive;
-	text-transform: uppercase;
-	text-shadow: 1px 1px 1px black;
-	color: white;
-	font-size: 5vw;
-}
-
-/* For quote */
-.quote
-{
-    max-width: 30%;
-    margin-left: 5%;
-    vertical-align: middle;
-    box-sizing: content-box;
-}
-
-blockquote
-{
-    padding: 0;
-    margin: 0;
-    border-left: 0;
-    font-family: Georgia, serif;
-    font-size: 1vw;
-    color: #35b7ef;
-    font-weight: bold;
-    position: relative;
-    overflow: visible;
-    margin: 0.5em;
-    padding: 0.5vw 15vw 0.5vw 10vw;
-}
-
-/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
-blockquote:before
-{
-    font-family: Georgia, serif;
-    position: absolute;
-    font-size: 7vw;
-    line-height: 0.5;
-    top: 0;
-    left: 0;
-    content: "\201C";
-}
-
-blockquote:after
-{
-    font-family: Georgia, serif;
-    position: absolute;
-   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
-    float:right;
-    font-size: 7vw;
-    line-height: 0.5;
-    right: 0;
-    bottom:-0.5em;
-    content: "\201D";
-}
-
-blockquote footer
-{
-    padding: 0 2em 0 0;
-    text-align:right;
-    color: #777;
-    font-size: 18pt;
+    span.openbtn {padding-left: 1.5vw;}
+    span.page_title {padding-left: 1vw;}
 }

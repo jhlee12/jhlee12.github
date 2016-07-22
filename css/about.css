@@ -1,0 +1,16 @@
+body
+{
+    background: url(../img/violin.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: content-box;
+}
+
+p.about
+{
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30pt;
+}

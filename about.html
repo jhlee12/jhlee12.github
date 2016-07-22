@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Without Wax - Jeong Hyun Lee: About</title>
+	<title>Jeong Hyun Lee: About Me</title>
 
-	<link rel="shortcut icon" href="img/favicon.ico" />
-	<link rel="icon" href="img/favicon.ico" type="image/ico" />
+	<link rel="shortcut icon" href="img/favicon_1.ico" />
+	<link rel="icon" href="img/favicon_1.ico" type="image/ico" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Amiko|Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Josefin+Sans" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 
@@ -15,23 +16,23 @@
 	<meta name="description" content="Jeong Hyun Lee Project">
 	<meta name="keywords" content="Jeong Hyun Lee, Jeong, Ithaca, Cornell, Korea, Seoul">
 	<meta name="author" content="Jeong Hyun Lee">
-	<!-- <meta http-equiv="refresh" content="60"> -->
 
 </head>
-<body>
-	<div id="mySidenav" class="sidenav">
+<body class="about">
+	<div id="mySidenav" class="sidenav noselect" style="z-index: 40;">
   		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   		<a href="index.html">Home</a>
 		<a href="about.html" class="active">About</a>
 		<a href="#">Clients</a>
-		<a href="#">Contact</a>
+		<a href="contact.html">Contact</a>
 	</div>
 
-	<!-- Use any element to open the sidenav -->
-	<span class="openbtn noselect" onclick="openNav()" style="z-index: 1">☰</span>
-
-	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-	<div id="main"onclick="closeNav()" style="z-index: -1">
+	<div class="nav" id="nav">
+		<span class="openbtn noselect" onclick="openNav()" style="color: black">☰</span>
+		<span class="noselect page_title">About Me</span>
+	</div>
+	<div id="main" onclick="closeNav()" style="z-index: -1">
+		<p class="noselect about" style="display: none;">I am Jeong Hyun Lee, a rising senior at Ithaca High School in New York. Originally from Korea, I have lived in Ithaca for a total of 6 and half years. I am interested in pursuing economics when I enter college. I also have interests in computer science and data analysis. Outside of academics, I have been a violinist for 12 years, a rower, as well as a consistent volunteer in the local and international community.</p>
 	</div>
 </body>
 </html>
