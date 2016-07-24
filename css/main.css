@@ -1,8 +1,11 @@
 /* The side navigation menu */
 .sidenav
 {
-    z-index: 40;
-    height: 100%; /* 100% Full-height */
+    z-index: 40 !important; 
+    height: 100% !important; /* 100% Full-height */
+    min-height: 100% !important;
+    min-width: 0 !important;
+    max-width: 250px;
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -12,6 +15,7 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    overflow-y: hidden;
 }
 
 /* The navigation menu links */
@@ -44,6 +48,7 @@
     text-decoration: none;
     outline: 0;
     outline-offset: 0;
+    color: #818181;
 }
 
 /* Position and style the close button (top right corner) */
@@ -59,7 +64,7 @@
 /* Style open button */
 span.openbtn
 {
-    z-index: 1;
+    z-index: 3;
     font-size: 5vw;
     float: left;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -68,30 +73,6 @@ span.openbtn
     padding-left: 2.5vw;
     vertical-align: middle;
     color: #ffffff;
-}
-
-div.nav
-{
-    display: flex;
-    align-items: center;
-    padding-top: 2%;
-    z-index: -30;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main
-{
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    color: white;
-    transition: margin-left .5s;
-    top:0;
-    padding: 20px;
-    display: flex;
-    align-items : center;
-    box-sizing: content-box;
 }
 
 span.page_title
@@ -107,12 +88,28 @@ span.page_title
     display: none;
 }
 
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px)
+div.nav
 {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+    z-index: 3;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main
+{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color: white;
+    transition: margin-left .5s;
+    top:0;
+    display: flex;
+    align-items : center;
+    box-sizing: content-box;
 }
 
 /* Disable text selection option */
@@ -127,6 +124,28 @@ span.page_title
     user-select: none;           /* Non-prefixed version, currently not supported by any browser */
     -webkit-user-drag: none; 
     cursor: default;
+}
+
+@media screen and (max-height: 450px)
+{
+  a.home {padding-top: 23px;}
+  .sidenav {padding-top: 0;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media (max-width: 743.125px)
+{
+    .sidenav
+    {
+        width: 100% !important;
+        min-width: 100% !important;
+        height: 0;
+        padding-top: 0;
+        min-height: 0 !important;
+        max-height: 225px;
+    }
+    .sidenav a {font-size: 18px;}
+    a.home {padding-top: 23px;}
 }
 
 @media (min-width: 1024px)

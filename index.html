@@ -8,29 +8,30 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu|Poiret One" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/mainscript.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/script.js" async></script>
 
 	<meta charset="UTF-8">
 	<meta name="description" content="Jeong Hyun Lee Project">
 	<meta name="keywords" content="Jeong Hyun Lee, Jeong, Ithaca, Cornell, Korea, Seoul">
 	<meta name="author" content="Jeong Hyun Lee">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
-	<div id="mySidenav" class="sidenav noselect" style="z-index: 40;">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  		<a href="index.html" class="active">Home</a>
+	<div id="mySidenav" class="sidenav noselect" style="z-index: 40; display: none;">
+  		<a href="javascript:void(0)" class="closebtn">&times;</a>
+  		<a href="index.html" class="active home">Home</a>
 		<a href="about.html">About</a>
 		<a href="#">Extracurriculars</a>
 		<a href="contact.html">Contact</a>
 	</div>
-	<div class="nav" id="nav" style="z-index: -30;">
-		<span class="openbtn noselect" onclick="openNav()" style="color: white; text-shadow: 1.5px 1.5px 1.5px black;">☰</span>
+	<div class="nav" id="nav">
+		<span class="openbtn noselect" style="color: white; text-shadow: 1.5px 1.5px 1.5px black;">☰</span>
 	</div>
-	<div id="main" onclick="closeNav()" style="z-index: -1">
+	<div id="main" style="z-index: -1"> <!-- move js to external-->
 		<div class="introduction col-xs-6 col-sm-6 col-md-6 col-lg-6">
 			<img src="img/rsz_logo.png" id="logo" class="noselect" style="display: none" alt="Logo" onContextMenu="return false" onDragStart="return false">
 
@@ -39,14 +40,7 @@
 			</div>
 		</div>
 		<div class="quote noselect col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none">
-		    <blockquote class="quote_text">
-		        When I discover who I am, I'll be free.
-		    <footer>
-		        <cite>
-		            Ralph Ellsion
-		        </cite>
-		    </footer>
-		    </blockquote>
+		    <p class="text"><span class="bold">Strategic</span> Thinker, <span class="bold">Creative</span> Analyst</p>
 		</div>
 	</div>
 </body>

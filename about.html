@@ -20,24 +20,24 @@
 
 </head>
 <body class="about">
-	<div id="mySidenav" class="sidenav noselect" style="z-index: 40;">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  		<a href="index.html">Home</a>
+	<div id="mySidenav" class="sidenav noselect" style="z-index: 40; display: none;">
+  		<a href="javascript:void(0)" class="closebtn">&times;</a>
+  		<a href="index.html" class="home">Home</a>
 		<a href="about.html" class="active">About</a>
 		<a href="#">Extracurriculars</a>
 		<a href="contact.html">Contact</a>
 	</div>
 
 	<div class="nav" id="nav">
-		<span class="openbtn noselect" onclick="openNav()" style="color: black">☰</span>
+		<span class="openbtn noselect" style="color: black">☰</span>
 		<span class="noselect page_title">About Me</span>
 	</div>
-	<div id="main" class="noselect" onclick="closeNav()" style="z-index: -1">
-		<p class="noselect aboutme" style="display: none;">I am Jeong Hyun Lee, a rising senior at Ithaca High School in New York. Originally from Korea, I have lived in Ithaca for a total of 6 and half years. I am interested in pursuing economics when I enter college. I also have interests in computer science and data analysis. Outside of academics, I have been a violinist for 12 years, a rower, as well as a consistent volunteer in the local and international community.</p>
+	<div id="main" class="noselect" style="z-index: -1">
 		<div class="image noselect" id="cf2" style="display: none;">
-			<img id="me" class="noselect" src="img/me.jpg">
+			<img id="me" class="noselect" title="me" src="img/profile.jpg">
 			<!-- <img id="click" class="profile noselect" src="img/profile.jpg"> -->
 		</div>
+		<p class="noselect aboutme bg-info" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed tortor ut nulla venenatis efficitur sit amet ut quam. Cras aliquam sodales fringilla. Sed sem justo, dapibus mattis est a, dictum laoreet sem. Vestibulum condimentum mi leo, sit amet maximus justo sollicitudin ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 	</div>
 </body>
 </html>
