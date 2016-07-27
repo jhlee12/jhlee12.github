@@ -1,83 +1,125 @@
+/* Links */
+a, a:focus, a:hover {color: #fff;}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:focus
+{
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+html, body
+{
+  height: 100%;
+  margin: 0;
+  color: #777;
+}
 body
 {
-    background: url(../img/rsz_violin.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    box-sizing: content-box;
+  color: #fff;
+  text-align: center;
+  margin: 0;
 }
 
-p.aboutme
+.inner
 {
-	width: 50%;
-	padding-left: 0%;
-	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 20pt;
-	float: left;
-	/*font-weight: bold;*/
-	text-shadow: 1.5px 1.5px 1.5px black;
+  padding: 2rem;
+  width: 42rem;
+  overflow: hidden;
+  display: inline-block;
 }
 
-div.image
+/* Header */
+.masthead
 {
-	width:50%;
-	float: right;
+  margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  max-height: 68px;
 }
 
-/*#cf2 img
+.masthead-brand {margin-bottom: 0;}
+
+.nav-masthead .nav-link
 {
-	-webkit-transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-o-transition: opacity 1s ease-in-out;
-	transition: opacity 1s ease-in-out;
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(73,73,73,0.9);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
 }
 
-#cf2 img.transparent
+.nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus
 {
-	opacity: 0;
+  color: rgba(255,255,255,0.8);
+  border-bottom-color: rgba(255,255,255,.8);
 }
 
-#cf2 img.nont
+.nav-masthead .nav-link + .nav-link {margin-left: 1rem;}
+
+.nav-masthead .active
 {
-	opacity: 1;
+  color: #fff;
+  border-bottom-color: #fff;
 }
 
-#click
+@media (min-width: 48em)
 {
-	cursor: default;
-}*/
-
-img#me
-{
-	display: block;
-	margin: auto;
-	border-radius: 75%;
-	width: 40%;
-	max-width: 100%;
-	max-height: 100%;
+  .masthead-brand {float: left;}
+  .nav-masthead {float: right;}
 }
 
-@media (min-width: 1024px)
+/*
+ * Affix and center
+ */
+@media (min-width: 40em)
 {
-	p.aboutme {padding-left: 1%; font-size: 25pt;}
+  /* Pull out the header and footer */
+  .masthead
+  {
+    position: fixed;
+    top: 0;
+  }
+  /* Handle the widths */
+  .masthead {width: 100%; /* Must be percentage or pixels for horizontal alignment */}
 }
 
-@media (min-width: 1280px)
+h3.header_1
 {
-	p.aboutme {padding-left: 1.5%;}
-	img#me {width: 50%;}
-}
-
-@media (min-width: 1440px)
-{
-	p.aboutme {width: 55%; font-size: 27pt;}
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
 }
 
 
-@media (min-width: 1850px)
+.bgImg_1, .bgImg_2, .bgImg_3 /* Add more if needed */
 {
-	p.aboutme {font-size: 35pt; width: 60%; padding-left: 3%;}
-	img#me {width: 50%;}
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed !important;
+  background-position: center;
+  background: no-repeat;
+  background-size: cover;
+}
+
+.bgImg_1
+{
+  background: url(../img/triangular_@2X.png) repeat center center fixed;
+  min-height: 100%;
+}
+
+.bgImg_2
+{
+  background-image: url("../img/rsz_violin.jpg");
+  min-height: 400px;
+}
+
+.bgImg_3
+{
+  background-image: url("../img/rsz_book.jpg");
+  min-height: 400px;
 }
