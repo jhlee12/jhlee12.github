@@ -39,6 +39,7 @@ body
   width: 100%;
   text-align: center;
   max-height: 68px;
+  transition: 0.5s;
 }
 
 .masthead-brand {margin-bottom: 0;}
