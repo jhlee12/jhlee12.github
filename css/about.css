@@ -25,7 +25,7 @@ body
 .inner
 {
   padding: 2rem;
-  width: 42rem;
+  width: 100%;
   overflow: hidden;
   display: inline-block;
 }
@@ -34,15 +34,17 @@ body
 .masthead
 {
   margin-bottom: 2rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   text-align: center;
-  max-height: 68px;
-  transition: 0.5s;
+  max-height: calc(68px + 1%);
 }
 
-.masthead-brand {margin-bottom: 0;}
+.masthead-brand
+{
+  margin-bottom: 0; color: #666666;
+}
 
 .nav-masthead .nav-link
 {
@@ -59,12 +61,25 @@ body
   border-bottom-color: rgba(255,255,255,.8);
 }
 
+.stuck .nav-link:hover, .stuck .nav-link:focus
+{
+  color: rgba(0,0,0,0.8);
+  border-bottom-color: rgba(0,0,0,.8);
+}
+
+
 .nav-masthead .nav-link + .nav-link {margin-left: 1rem;}
 
 .nav-masthead .active
 {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+.stuck .active
+{
+  color: #000;
+  border-bottom-color: #000;
 }
 
 @media (min-width: 48em)
@@ -81,11 +96,105 @@ body
   /* Pull out the header and footer */
   .masthead
   {
-    position: fixed;
+    position: absolute;
     top: 0;
   }
   /* Handle the widths */
   .masthead {width: 100%; /* Must be percentage or pixels for horizontal alignment */}
+}
+
+@media (min-width: 62em)
+{
+  .inner
+  {
+    width: 42rem;
+  }
+}
+
+.stuck
+{
+  position:fixed;
+  background-color:#fff;
+  border-bottom:1px solid #e7e7e7;
+  -webkit-animation:slideDown 0.35s;
+  -o-animation:slideDown 0.35s;
+  animation:slideDown 0.35s;
+}
+
+@-webkit-keyframes slideDown
+{
+  from
+  {
+    opacity:0;
+    -webkit-transform:translate3d(0, -100%, 0)
+  }
+  to
+  {
+    opacity:1;
+    -webkit-transform:none
+  }
+}
+@-moz-keyframes slideDown
+{
+  from
+  {opacity:0;
+    -moz-transform:translate3d(0, -100%, 0)
+  }
+  to
+  {
+    opacity:1;-moz-transform:none
+  }
+}
+@keyframes slideDown
+{
+  from
+  {
+    opacity:0;
+    -webkit-transform:translate3d(0, -100%, 0);
+    -moz-transform:translate3d(0, -100%, 0);
+    -ms-transform:translate3d(0, -100%, 0);
+    -o-transform:translate3d(0, -100%, 0);
+    transform:translate3d(0, -100%, 0)
+  }
+  to
+  {
+    opacity:1;
+    -webkit-transform:none;
+    -moz-transform:none;
+    -ms-transform:none;
+    -o-transform:none;transform:none
+  }
+}
+
+.scroll-to-top-btn
+{
+  display: block;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1000;
+  right: -60px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: #999;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #999;
+  padding-left: 1px;
+  opacity: 0;
+  -webkit-transition: right 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55),opacity 0.3s,color 0.3s,border-color 0.3s;
+  -webkit-transition: right 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55),opacity 0.3s,color 0.3s,border-color 0.3s;
+  -moz-transition: right 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55),opacity 0.3s,color 0.3s,border-color 0.3s;
+  transition: right 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55),opacity 0.3s,color 0.3s,border-color 0.3s;
+}
+
+.scroll-to-top-btn.visible
+{
+    right: 15px;
+    opacity: 1;
+    color: #999;
 }
 
 h3.header_1
@@ -123,4 +232,10 @@ h3.header_1
 {
   background-image: url("../img/rsz_book.jpg");
   min-height: 400px;
+}
+
+.footer
+{
+  background-color: #333;
+  min-height: 100px;
 }

@@ -134,6 +134,7 @@ a.linkbtn
 	color: #ffffff;
 	text-decoration: none;
   cursor: pointer;
+  font-size: 30pt;
 }
 
 a.linkbtn:hover
