@@ -39,17 +39,24 @@ body
   width: 100%;
   text-align: center;
   max-height: calc(68px + 1%);
+  pointer-events: all;
+  z-index: 3;
 }
 
 .masthead-brand
 {
-  margin-bottom: 0; color: #666666;
+  margin-bottom: 0;
+  color: #666666;
+  font-family: 'Ubuntu', sans-serif;
 }
+
+.nav-masthead {cursor: auto;}
 
 .nav-masthead .nav-link
 {
   padding: .25rem 0;
-  font-weight: bold;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 1.1rem;
   color: rgba(73,73,73,0.9);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
@@ -116,9 +123,9 @@ body
   position:fixed;
   background-color:#fff;
   border-bottom:1px solid #e7e7e7;
-  -webkit-animation:slideDown 0.35s;
-  -o-animation:slideDown 0.35s;
-  animation:slideDown 0.35s;
+  -webkit-animation: slideDown 0.35s;
+  -o-animation: slideDown 0.35s;
+  animation: slideDown 0.35s;
 }
 
 @-webkit-keyframes slideDown
@@ -197,6 +204,29 @@ body
     color: #999;
 }
 
+.vertical-middle-first
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%)
+}
+
+.title {white-space: nowrap;}
+
+span.titleText
+{
+    text-align: center !important;
+    padding:16px 32px !important;
+    color: #fff !important;
+    background-color: #000 !important;
+    font-size: 24px !important;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    letter-spacing:4px;
+    display: none;
+}
+
 h3.header_1
 {
   letter-spacing: 5px;
@@ -204,7 +234,6 @@ h3.header_1
   font: 20px "Lato", sans-serif;
   color: #111;
 }
-
 
 .bgImg_1, .bgImg_2, .bgImg_3 /* Add more if needed */
 {

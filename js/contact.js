@@ -1,3 +1,4 @@
 $(document).ready(function() {
-    $(".email, .sns").fadeIn(1200);
+    $('.email, .sns, .masthead-brand').fadeIn(1500);
+    $('[data-toggle="tooltip"]').tooltip();
 });
