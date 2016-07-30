@@ -250,19 +250,19 @@ h3.header_1
 
 .bgImg_1
 {
-    background: url(../img/triangular_@2X.png) repeat center center fixed;
+    background: url("../img/about_img/about_background_big.png") repeat center center fixed;
     min-height: 100%;
 }
 
 .bgImg_2
 {
-    background-image: url("../img/rsz_violin.jpg");
+    background-image: url("../img/about_img/violin.jpg");
     min-height: 400px;
 }
 
 .bgImg_3
 {
-    background-image: url("../img/rsz_book.jpg");
+    background-image: url("../img/about_img/book.jpg");
     min-height: 400px;
 }
 
