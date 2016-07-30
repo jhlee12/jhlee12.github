@@ -1,7 +1,6 @@
 $(document).ready(function() {
     $(".titleText").fadeIn(1000);
-    //setTimeout(function() {$(".titleText").text("Jeong Hyun Lee");}, 4000);
-    $('.titleText').delay(300).fadeOut(1000,function(){$(this).text('Jeong Hyun Lee').fadeIn(800)});
+    $('.titleText').delay(300).fadeOut(1000,function(){$(this).text('Jeong Hyun Lee').fadeIn(1000)});
 
     var $window = $(window);
     var $navbar = $('.masthead');
