@@ -9,28 +9,55 @@
         <meta name="author" content="Jeong Hyun Lee">
         <link rel="icon" href="img/Logo%20%26%20Favicon/favicon_1.ico">
 
-        <script type="text/javascript" src="libraries/js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="libraries/js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="libraries/js/tether.min.js"></script>
+        <script type="text/javascript" src="libraries/js/bootstrap.min.js" async></script>
         <script type="text/javascript" src="libraries/js/velocity.min.js"></script>
-        <script type="text/javascript" src="js/about.js" async></script>
+        <script type="text/javascript" src="js/about.min.js" async></script>
 
         <title>Jeong Hyun Lee: About Me</title>
 
         <link rel="stylesheet" type="text/css" href="libraries/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="libraries/css/font-awesome-4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="libraries/css/font-awesome.min.css">
 
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/about.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.min.css">
+        <link rel="stylesheet" type="text/css" href="css/about.min.css">
     </head>
 
-    <body data-spy="scroll">
+    <body data-spy="scroll" data-target="#aboutNav">
         <div class="masthead clearfix">
             <div class="inner">
                 <h3 class="masthead-brand noselect">About Me</h3>
-                <nav class="nav nav-masthead noselect">
-                    <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link active" href="about.html">About Me</a>
-                    <a class="nav-link" href="contact.html">Contact Me</a>
-                </nav>
+                <div id="carousel-example-vertical" class="carousel vertical slide">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="ticker-headline">
+                                <nav class="nav nav-masthead noselect">
+                                    <a class="nav-link" href="https://jhlee12.github.io/l">Home</a>
+                                    <a class="nav-link active about" href="#top">About Me</a>
+                                    <a class="nav-link" href="contact.html">Contact Me</a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ticker-headline" id="aboutNav">
+                                <ul class="nav nav-masthead noselect">
+                                    <li><a class="page-scroll nav-link" href="#whoamI">Who am I?</a></li>
+                                    <li><a class="page-scroll nav-link" href="#hobbies">Hobbies</a></li>
+                                    <li><a class="page-scroll nav-link">Activities</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="up carousel-control" href="#carousel-example-vertical" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="down carousel-control" href="#carousel-example-vertical" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -44,12 +71,12 @@
             </div>
         </div>
 
-        <div class="text_1" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-            <h3 class="header_1" style="text-align:center;">ABOUT ME</h3>
+        <div class="text_1" id="whoamI" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 class="header_1" style="text-align:center;">WHO AM I?</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
         </div>
 
-        <div class="bgImg_2">
+        <div class="bgImg_2" id="hobbies">
         </div>
 
         <div class="text_2" style="position:relative;">

@@ -169,6 +169,7 @@ div.introduction
     color: #ffffff;
     margin: 0;
     display: none;
+    letter-spacing: 10px;
 }
 
 /* For quote */
@@ -195,11 +196,12 @@ p.text
     padding: 0;
     color: white;
     display: none;
+    letter-spacing: 4px;
 }
 
-span.bold
+p.bold
 {
-    font-weight: 900;
+    /*font-weight: 900;*/
     color: #35b7ef;
 }
 
