@@ -14,10 +14,14 @@ $(document).ready(function() {
             if ($(this).scrollTop() > window.innerHeight * 0.6)
             {
                 $navbar.addClass('stuck');
+                $(".nav1").removeClass('active');
+                $(".nav2").addClass('active');
             }
             else
             {
                 $navbar.removeClass('stuck');
+                $('.nav2').removeClass('active');
+                $('.nav1').addClass('active');
             }
         });
     };

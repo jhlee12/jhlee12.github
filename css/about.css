@@ -77,11 +77,6 @@ body
     border-bottom-color: #fff;
 }
 
-a.about
-{
-
-}
-
 li {display: inline-block;}
 
 li + li {margin-left: 1rem;}
@@ -119,13 +114,7 @@ li + li {margin-left: 1rem;}
     .masthead {width: 100%; /* Must be percentage or pixels for horizontal alignment */}
 }
 
-@media (min-width: 62em)
-{
-    .inner
-    {
-        width: 42rem;
-    }
-}
+@media (min-width: 62em) {.inner {width: 42rem;}}
 
 .stuck
 {
@@ -214,71 +203,6 @@ li + li {margin-left: 1rem;}
     right: 15px;
     opacity: 1;
     color: #999;
-}
-
-.vertical-middle-first
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%)
-}
-
-.title {white-space: nowrap;}
-
-span.titleText
-{
-    text-align: center !important;
-    padding:16px 32px !important;
-    color: #fff !important;
-    background-color: #000 !important;
-    font-size: 24px !important;
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-    letter-spacing: 10px;
-    display: none;
-}
-
-h3.header_1
-{
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color: #111;
-}
-
-.bgImg_1, .bgImg_2, .bgImg_3 /* Add more if needed */
-{
-    position: relative;
-    opacity: 0.65;
-    background-attachment: fixed !important;
-    background-position: center;
-    background: no-repeat;
-    background-size: cover;
-}
-
-.bgImg_1
-{
-    background: url("../img/about_img/about_background_big.png") repeat center center fixed;
-    min-height: 100%;
-}
-
-.bgImg_2
-{
-    background-image: url("../img/about_img/violin.jpg");
-    min-height: 400px;
-}
-
-.bgImg_3
-{
-    background-image: url("../img/about_img/book.jpg");
-    min-height: 400px;
-}
-
-.footer
-{
-    background-color: #333;
-    min-height: 100px;
 }
 
 /* NavBar Carousel */
@@ -398,3 +322,68 @@ h3.header_1
 .carousel-control:focus {opacity: 0.5;}
 
 .stuck .carousel-control {color: rgb(73,73,73);}
+
+.vertical-middle-first
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%)
+}
+
+.title {white-space: nowrap;}
+
+span.titleText
+{
+    text-align: center !important;
+    padding:16px 32px !important;
+    color: #fff !important;
+    background-color: #000 !important;
+    font-size: 24px !important;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    letter-spacing: 10px;
+    display: none;
+}
+
+h3.header_1
+{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+.bgImg_1, .bgImg_2, .bgImg_3 /* Add more if needed */
+{
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed !important;
+    background-position: center;
+    background: no-repeat;
+    background-size: cover;
+}
+
+.bgImg_1
+{
+    background: url("../img/about_img/about_background_big.png") repeat center center fixed;
+    min-height: 100%;
+}
+
+.bgImg_2
+{
+    background-image: url("../img/about_img/violin.jpg");
+    min-height: 400px;
+}
+
+.bgImg_3
+{
+    background-image: url("../img/about_img/book.jpg");
+    min-height: 400px;
+}
+
+.footer
+{
+    background-color: #333;
+    min-height: 100px;
+}
