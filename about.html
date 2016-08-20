@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -13,22 +13,22 @@
         <script type="text/javascript" src="libraries/js/tether.min.js"></script>
         <script type="text/javascript" src="libraries/js/bootstrap.min.js" async></script>
         <script type="text/javascript" src="libraries/js/velocity.min.js"></script>
-        <script type="text/javascript" src="js/about.js" async></script>
+        <script type="text/javascript" src="js/about.min.js" async></script>
 
         <title>Jeong Hyun Lee: About Me</title>
 
         <link rel="stylesheet" type="text/css" href="libraries/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="libraries/css/font-awesome.min.css">
 
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/about.css">
+        <link rel="stylesheet" type="text/css" href="css/main.min.css">
+        <link rel="stylesheet" type="text/css" href="css/about.min.css">
     </head>
 
     <body data-spy="scroll" data-target="#aboutNav">
         <div class="masthead clearfix">
             <div class="inner">
                 <h3 class="masthead-brand noselect">About Me</h3>
-                <div id="carousel-example-vertical" class="carousel vertical slide">
+                <div class="carousel vertical slide" id="carousel-example-vertical">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active nav1">
                             <div class="ticker-headline">
@@ -42,9 +42,9 @@
                         <div class="carousel-item nav2">
                             <div class="ticker-headline" id="aboutNav">
                                 <ul class="nav nav-masthead noselect">
-                                    <li><a class="page-scroll nav-link" href="#whoamI">Who am I?</a></li>
+                                    <li><a class="page-scroll nav-link" href="#aboutMe">Who am I?</a></li>
                                     <li><a class="page-scroll nav-link" href="#hobbies">Hobbies</a></li>
-                                    <li><a class="page-scroll nav-link disabled">Activities</a></li>
+                                    <li><a class="page-scroll nav-link disabled" style="cursor-events: none;">Activities</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -61,22 +61,43 @@
             </div>
         </div>
 
-        <a href="#top" class="scroll-to-top-btn">
+        <a class="scroll-to-top-btn" href="#top">
             <i class="fa fa-arrow-up"></i>
         </a>
 
         <div class="bgImg_1">
-            <div class="vertical-middle-first title">
-                <span class="titleText">WHO AM I?</span>
+            <div class="vertical-middle title">
+                <span class="title-text text-center noselect">WHO AM I?</span>
             </div>
         </div>
 
-        <div class="text_1" id="whoamI" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-            <h3 class="header_1" style="text-align:center;">WHO AM I?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+        <div class="about-me" id="aboutMe">
+            <h3 class="about-header text-center">ABOUT ME</h3>
+            <p class="my-name text-center">Jeong Hyun Lee &mdash; 이정현 &mdash; 李政炫</p>
+            <div class="modal-frame noselect">
+                <div class="photo-of-me"><img id="myPicture" title="Photo of Me" alt="Photo of Jeong Hyun Lee" src="img/profile.jpg" draggable="false"></div>
+                <div class="pic-description">Photo of Me</div>
+            </div>
+            <p class="about-me-text">I am a senior at Ithaca Senior High School, located in Ithaca, NY. I was born in Seoul, South Korea and moved to the US the first time in 2004. Then in 2005, I returned to Korea, only to come back after 4 years in 2009. There, I graduated from Northeast Elementary School and attended DeWitt Middle School. After 3 years in the US, I transfered to Eonju Middle School back in Korea. Lastly, my final move so far was in 2014, back to Ithaca, to Ithaca High School. For all my stays in the US, I have lived in Ithaca, NY.<br>
+            I am interested in pursuing economics in the future but also looking towards an interest in information science or some type of engineering.</p>
+            <p class="about-me-text fun-facts">Fun facts about me</p>
+            <ul>
+                <li>Having parents who are both professors, I have followed them to visit 19 different countries around the world.</li>
+                <li>I have only a elementary school diploma.</li>
+            </ul>
+        </div>
+
+        <div class="modal" id="myPicModal">
+            <span class="modal-closebtn noselect">&times;</span>
+            <div class="modal-contents">
+                <img id="img" draggable="false">
+            </div>
         </div>
 
         <div class="bgImg_2" id="hobbies">
+            <div class="vertical-middle">
+                <span class="section-header noselect">HOBBIES</span>
+            </div>
         </div>
 
         <div class="text_2" style="position:relative;">
@@ -88,10 +109,8 @@
         <div class="bgImg_3">
         </div>
 
-        <div class="footer">
-            <div class="inner noselect" style="color: rgba(255,255,255,.5);">
-                <p><i class="fa fa-copyright"></i> 2016 | Jeong Hyun Lee | All Rights Reserved</p>
-            </div>
+        <div class="footer noselect">
+            <p class="text-center vertical-middle"><i class="fa fa-copyright"></i> 2016 | Jeong Hyun Lee | All Rights Reserved</p>
         </div>
     </body>
 </html>
