@@ -5,11 +5,11 @@
     font-style: normal;
     font-weight: 400;
     src: local('Indie Flower'), local('IndieFlower'),
-         url(../libraries/fonts/IndieFlower/IndieFlower.eot) format('embedded-opentype'),
-         url(../libraries/fonts/IndieFlower/IndieFlower.woff2) format('woff2'),
-         url(../libraries/fonts/IndieFlower/IndieFlower.woff) format('woff'),
-         url(../libraries/fonts/IndieFlower/IndieFlower.ttf) format('truetype'),
-         url(../libraries/fonts/IndieFlower/IndieFlower.svg#IndieFlower) format('svg');
+        url(../libraries/fonts/IndieFlower/IndieFlower.eot) format('embedded-opentype'),
+        url(../libraries/fonts/IndieFlower/IndieFlower.woff2) format('woff2'),
+        url(../libraries/fonts/IndieFlower/IndieFlower.woff) format('woff'),
+        url(../libraries/fonts/IndieFlower/IndieFlower.ttf) format('truetype'),
+        url(../libraries/fonts/IndieFlower/IndieFlower.svg#IndieFlower) format('svg');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 @font-face
@@ -18,11 +18,11 @@
     font-style: normal;
     font-weight: 400;
     src: local('Poiret One'), local('PoiretOne-Regular'),
-         url(../libraries/fonts/PoiretOne/PoiretOne.eot) format('embedded-opentype'),
-         url(../libraries/fonts/PoiretOne/PoiretOne.woff2) format('woff2'),
-         url(../libraries/fonts/PoiretOne/PoiretOne.woff) format('woff'),
-         url(../libraries/fonts/PoiretOne/PoiretOne.ttf) format('truetype'),
-         url(../libraries/fonts/PoiretOne/PoiretOne.svg#PoiretOne) format('svg');
+        url(../libraries/fonts/PoiretOne/PoiretOne.eot) format('embedded-opentype'),
+        url(../libraries/fonts/PoiretOne/PoiretOne.woff2) format('woff2'),
+        url(../libraries/fonts/PoiretOne/PoiretOne.woff) format('woff'),
+        url(../libraries/fonts/PoiretOne/PoiretOne.ttf) format('truetype'),
+        url(../libraries/fonts/PoiretOne/PoiretOne.svg#PoiretOne) format('svg');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 @font-face
@@ -31,11 +31,11 @@
     font-style: normal;
     font-weight: 400;
     src: local('Alegreya Sans SC'), local('AlegreyaSansSC-Regular'),
-         url(../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.eot) format('embedded-opentype'),
-         url(../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff2) format('woff2'),
-         url(../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff) format('woff'),
-         url(../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.ttf) format('truetype'),
-         url(../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.svg#AlegreyaSansSC) format('svg');
+        url(../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.eot) format('embedded-opentype'),
+        url(../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff2) format('woff2'),
+        url(../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.woff) format('woff'),
+        url(../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.ttf) format('truetype'),
+        url(../libraries/fonts/AlegreyaSansSC/AlegreyaSansSC.svg#AlegreyaSansSC) format('svg');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 @font-face
@@ -44,26 +44,37 @@
     font-style: normal;
     font-weight: 400;
     src: local('Lato Regular'), local('Lato-Regular'),
-         url(../libraries/fonts/Lato/Lato.eot) format('embedded-opentype'),
-         url(../libraries/fonts/Lato/Lato.woff2) format('woff2'),
-         url(../libraries/fonts/Lato/Lato.woff) format('woff'),
-         url(../libraries/fonts/Lato/Lato.ttf) format('truetype'),
-         url(../libraries/fonts/Lato/Lato.svg#Lato) format('svg');
+        url(../libraries/fonts/Lato/Lato.eot) format('embedded-opentype'),
+        url(../libraries/fonts/Lato/Lato.woff2) format('woff2'),
+        url(../libraries/fonts/Lato/Lato.woff) format('woff'),
+        url(../libraries/fonts/Lato/Lato.ttf) format('truetype'),
+        url(../libraries/fonts/Lato/Lato.svg#Lato) format('svg');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-/* latin */
 @font-face
 {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
     src: local('Ubuntu'),
-         url(../libraries/fonts/Ubuntu/Ubuntu.eot) format('embedded-opentyp'),
+         url(../libraries/fonts/Ubuntu/Ubuntu.eot) format('embedded-opentype'),
          url(../libraries/fonts/Ubuntu/Ubuntu.woff2) format('woff2'),
          url(../libraries/fonts/Ubuntu/Ubuntu.woff) format('woff'),
          url(../libraries/fonts/Ubuntu/Ubuntu.ttf) format('truetype'),
          url(../libraries/fonts/Ubuntu/Ubuntu.svg#Ubuntu) format('svg');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face
+{
+    font-family: 'MHunmin';
+    font-style: normal;
+    font-weight: 400;
+    src: local('MHunmin'),
+        url(../libraries/fonts/MHunmin/Mhunmin.eot) format('embedded-opentype'),
+        url(../libraries/fonts/MHunmin/MHunmin.woff2) format('woff2'),
+        url(../libraries/fonts/MHunmin/MHunmin.woff) format('woff'),
+        url(../libraries/fonts/MHunmin/MHunmin.ttf) format('truetype'),
+        url(../libraries/fonts/MHunmin/MHunmin.svg#MHunmin) format('svg');
 }
 
 .noselect
@@ -94,7 +105,7 @@ html, body {height: 100%;}
 body
 {
     color: #fff;
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .site-wrapper
@@ -139,7 +150,7 @@ body
 .masthead-brand
 {
     display: none;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin-bottom: 0;
 }
 
@@ -150,7 +161,7 @@ body
     background-color: transparent;
     border-bottom: 0.25rem solid transparent;
     color: rgba(255, 255, 255, 0.5);
-    font-family: "Alegreya Sans SC", sans-serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 1.1rem;
     padding: 0.25rem 0;
 }

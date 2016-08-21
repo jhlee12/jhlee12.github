@@ -43,7 +43,7 @@ body
 .header
 {
     display: none;
-    font-family: "Indie Flower", cursive;
+    font-family: 'Indie Flower', cursive;
     letter-spacing: 10px;
     margin: 0;
 }
@@ -65,7 +65,7 @@ body
 {
     color: #fff;
     display: none;
-    font-family: "Poiret One", sans-serif;
+    font-family: 'Poiret One', sans-serif;
     letter-spacing: 4px;
     margin: 0;
     padding: 0;
