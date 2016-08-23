@@ -12,6 +12,8 @@ body {position: relative;}
 /* Header */
 .masthead
 {
+    background-color: rgba(222, 222, 222, 0.6);
+    display: none;
     max-height: calc(68px + 1%);
     position: absolute !important;
     z-index: 3;
@@ -19,7 +21,7 @@ body {position: relative;}
 
 .masthead-brand
 {
-    color: #666666;
+    color: #666;
     display: block;
     font-family: 'Ubuntu', sans-serif;
     margin-bottom: 0;
@@ -27,6 +29,17 @@ body {position: relative;}
 
 .nav-masthead .nav-link {color: rgba(73, 73, 73, 0.9);}
 .nav-masthead .nav-link:hover {border-bottom-color: rgba(73, 73, 73, 0.9);}
+.nav-masthead .active
+{
+    border-bottom-color: rgba(255, 255, 255, 0.9) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+.nav-masthead .active:hover
+{
+    border-bottom-color: #fff !important;
+    color: #fff !important;
+    text-shadow: 1px 1px 1px #fff;
+}
 
 .nav > li {display: inline-block;}
 .nav > li + li {margin-left: 1rem;}
@@ -39,8 +52,8 @@ body {position: relative;}
 
 .stuck .nav-link:hover
 {
-    border-bottom-color: #000;
-    color: #000;
+    border-bottom-color: #000 !important;
+    color: #000 !important;
 }
 
 /* Affix and center */
@@ -233,7 +246,7 @@ body {position: relative;}
 
 .carousel-control:focus {opacity: 0.5;}
 
-.stuck .carousel-control {color: #494949;}
+.stuck .carousel-control {color: #444;}
 
 .vertical-middle
 {
@@ -248,7 +261,6 @@ body {position: relative;}
 
 .modal
 {
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
     height: 100%;
@@ -355,7 +367,7 @@ body {position: relative;}
 
 .bgImg_1
 {
-    background: url(../img/about_img/about_background_big.png) repeat center center fixed;
+    background-image: url(../img/about_img/New%20Zealand_LOTR_3.jpg);
     min-height: 100%;
 }
 
@@ -412,9 +424,9 @@ body {position: relative;}
 .pic-description
 {
     align-items: center;
-    background-color: black;
-    color: white;
-    display: none;
+    background-color: #000;
+    color: #fff;
+    display: flex;
     font-size: 24px;
     justify-content: center;
     letter-spacing: 2px;
@@ -422,10 +434,12 @@ body {position: relative;}
     max-width: 300px;
     min-height: 300px;
     min-width: 300px;
-    opacity: 0.7;
+    opacity: 0;
+    transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s; /* Safari */
 }
 
-.modal-frame:hover .pic-description {display: flex;}
+.modal-frame:hover .pic-description {opacity: 0.7}
 
 #myPicture
 {
@@ -494,7 +508,7 @@ body {position: relative;}
 .footer
 {
     background-color: #333;
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, 0.5);
     min-height: 100px;
     position: relative;
 }

@@ -4,9 +4,9 @@ $(document).ready(function() {
         $(this).attr('title', 'jeong hyun lee');
     });
 
-    $('[data-toggle="tooltip"]').tooltip();
+    $('.masthead').slideDown(1000);
 
-    $('body').scrollspy({target: '#aboutNav', offset: $('.masthead').height() + 60});
+    $('[data-toggle="tooltip"]').tooltip();
 
     var $window = $(window);
     var $navbar = $('.masthead');
