@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.title-text').fadeIn(1000).delay(300).fadeOut(1000,function() {
+    $('.title-text').fadeIn(1500).delay(300).fadeOut(1000,function() {
         $(this).text('jeong hyun lee').fadeIn(1000);
         $(this).attr('title', 'jeong hyun lee');
     });
@@ -67,7 +67,7 @@ $(document).ready(function() {
     $('.modal-frame').click(function() {
         $('#myPicModal').css('display', 'block');
         var $img = $('img', this);
-        $('#img').attr('src', $img.attr('src')).attr('title', $img.attr('title'));
+        $('#img').attr('src', $img.attr('src')).attr('title', $img.attr('title')).attr('alt', $img.attr('alt'));
     });
 
     $('#myPicModal').click(function() {
