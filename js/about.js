@@ -1,8 +1,5 @@
 $(document).ready(function() {
-    $('.title-text').fadeIn(1500).delay(300).fadeOut(1000,function() {
-        $(this).text('jeong hyun lee').fadeIn(1000);
-        $(this).attr('title', 'jeong hyun lee');
-    });
+    $('.title-text').fadeIn(1500);
 
     $('.masthead').slideDown(1000);
 
