@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.title-text').fadeIn(1500);
+    $('.title-text').fadeIn(3000);
 
     $('.masthead').slideDown(1000);
 
